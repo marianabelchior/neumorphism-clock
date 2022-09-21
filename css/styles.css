@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../assets/Drowning.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    position: absolute;
+}
+
+.clock{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #3209ffa7;
+    border-radius: 50%;
+    box-shadow: -4px -4px 10px rgba(27, 9, 109, 0.548),
+                inset 4px 4px 10px rgba(203, 36, 162, 0.5),
+                inset -4px -4px 10px rgba(240, 232, 6, 0.3),
+                4px 4px 10px rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #5d00ff;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    box-shadow: -4px -4px 10px rgba(27, 9, 109, 0.548),
+    inset 4px 4px 10px rgba(252, 139, 224, 0.5),
+    inset -4px -4px 10px rgba(240, 232, 6, 0.3),
+    4px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+span:nth-child(1){
+    top: 11%;
+    right: 26%;
+    transform: translateY(-50%);
+}
+
+span:nth-child(2){
+    top: 27.4%;
+    right: 9%;
+    transform: translateY(-50%);
+}
+
+span:nth-child(3){
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    background: #9345ff;
+    width: 30px;
+    border-radius: 10px;
+}
+
+span:nth-child(4){
+    bottom: 27.4%;
+    right: 9%;
+    transform: translateY(50%);
+}
+
+span:nth-child(5){
+    bottom: 11%;
+    right: 26%;
+    transform: translateY(50%);
+}
+
+span:nth-child(6){
+    bottom: 3%;
+    height: 30px;
+    border-radius: 10px;
+    background: #9345ff;
+}
+
+span:nth-child(7){
+    bottom: 11%;
+    left: 26%;
+    transform: translate(-50%);
+}
+
+span:nth-child(8){
+    bottom: 27.4%;
+    left: 9%;
+    transform: translateY(50%);
+}
+
+span:nth-child(9){
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    width: 30px;
+    border-radius: 10px;
+    background: #9345ff;
+}
+
+span:nth-child(10){
+    top: 27.4%;
+    left: 9%;
+    transform: translateY(-50%);
+}
+
+span:nth-child(11){
+    top: 11%;
+    left: 26%;
+    transform: translateY(-50%);
+}
+
+span:nth-child(12){
+    top: 3%;
+    height: 30px;
+    border-radius: 10px;
+    background: #9345ff;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec{
+    position: absolute;
+}
+
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.clock .hour, .hr{
+    width: 160px;
+    height: 160px;
+}
+
+.hr::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: rgb(255, 255, 107);
+    z-index: 9;
+    border-radius: 6px 6px 0 0;
+}
+
+.clock .min, .mn{
+    width: 190px;
+    height: 190px;
+}
+
+.mn::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: rgb(220, 121, 34);
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.clock .sec, .sc{
+    width: 230px;
+    height: 230px;
+}
+
+.sc::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: white;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+
